@@ -19,10 +19,10 @@ TARGET_SCREEN_WIDTH := 720
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from cancro device
-$(call inherit-product, device/xiaomi/aries/aries.mk)
+# Inherit from device
+$(call inherit-product, device/xiaomi/aries/device.mk)
 
-PRODUCT_NAME := aosp_aries
+PRODUCT_NAME := b2g_aries
 PRODUCT_CHARACTERISTICS := nosdcard
 PRODUCT_DEVICE := aries
 PRODUCT_BRAND := Xiaomi
